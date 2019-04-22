@@ -20,22 +20,25 @@
 #define HTTP_CONENT_LENTH "Content-Length: "
 #define HTTP_HEAD_TYPE "Content-Type: text/plain; charset=UTF-8\r\n"
 
-const std::string TX_RESPONE ="result=0&faillist=&balance=102&linkid=szyzx111&description=nonono";
-const std::string TX_REPORT = "13900000002,DELIVRD,2019-04-12 00:04,22DA53D4D87948BAB37EE04B060D894D";
+const std::string TX_RESPONE ="result=0&balance=1249&linkid=AC082549E06C45B2BA4416DA652988DA&description=%b7%a2%cb%cd%b6%cc%d0%c5%b3%c9%b9%a6";
+const std::string TX_REPORT = "report=13456565656,DELIVRD,2019-04-19 11:36,AC082549E06C45B2BA4416DA652988DA;"
+           "13456565656,DELIVRD,2029-04-19 12:16,AC082549E06C45B2BA4416DA652988DA;"
+           "13456565656,DELIVRD,2029-04-19 13:45,AC082549E06C45B2BA4416DA652988DA;"
+           "13456565656,DELIVRD,2029-04-19 14:32,AC082549E06C45B2BA4416DA652988DA";
 const std::string TX_UP = "ssss";
 
-const std::string XHR_Respone = "041517332783988";//msgid
+const std::string XHR_RESPONE = "041517332783988";//msgid
 
 const std::string XHR_UP =  "<MO>"
-        "<MSG mobile=\"8322820698\" spnumber=\"19853020618\" message=\"%e6%94%b6%e5%88%b0\" id=\"214561\" cc=\"1\" time=\"2019-04-17 11:29:55\" codec=\"utf-8\" />"
+        "<MSG mobile=\"8322820698\" spnumber=\"19853020618\" message=\"%e6%94%b6%e5%88%b0\" id=\"214561\" cc=\"1\" time=\"2019-04-19 11:29:55\" codec=\"utf-8\" />"
         "</MO>";
 
 //041710093728136
 const std::string XHR_REPORT = "<DR>"
-        "<MSG mobile = \"8322820698\""
+        "<MSG mobile = \"8322820777\""
         "status = \"DELIVRD\""
         "msgid = \"041517332783988\""
-        "submit_date = \"1904151733\""
+        "submit_date = \"1904191733\""
         "done_date = \"1904151733\" />"
         "</DR>";
 

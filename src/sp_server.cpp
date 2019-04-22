@@ -222,7 +222,7 @@ int SP_Server::start()
         cout << "----------------------------------------------------------------------" << endl;
 
         string recv_src(recv_buf);
-        string send_src(XHR_Respone);
+        string send_src(XHR_RESPONE);
 
         if (std::string::npos != recv_src.find("report"))
         {
@@ -249,10 +249,10 @@ int SP_Server::start()
         }
 
         //状态报告和上行短信
-//        sleep(1);
+        //sleep(1);
 
         // sendReportAndUp();
-//        justSendOneReport();
+        //justSendOneReport();
 
         memset(recv_buf, 0, BUFF_SIZE);
         free(send_buf);
@@ -266,10 +266,10 @@ int SP_Server::justSendOneReport()
 {
     report_fd = sendReportInit();
     pushReportAndUpsms(report_fd, REPORT, TX_REPORT.c_str());
-    sleep(1);
+    //sleep(1);
 
-    report_fd = sendReportInit();
-    pushReportAndUpsms(report_fd, UPSms, TX_UP.c_str());
+    //report_fd = sendReportInit();
+    //pushReportAndUpsms(report_fd, UPSms, TX_UP.c_str());
 
     return 0;
 }
