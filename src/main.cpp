@@ -20,7 +20,7 @@ int signatureMoveToTail(string& destSrc)
         return -1;
     }
 
-    int pos = destSrc.find("]");
+    unsigned int pos = destSrc.find("]");
     if(pos == std::string::npos)
     {
         pos = destSrc.find("】");
